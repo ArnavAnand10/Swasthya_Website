@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins";
+  text-align: center;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+}
+
+h1,
+s h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+hr {
+  width: 50%;
+  margin-left: 25% !important;
+  margin-right: 25% !important;
+  height: 2px !important;
+  background-color: #000000a2;
+  opacity: 0.8;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+.navbar .active {
+  border-bottom: 2px white solid;
+}
+
+.navbar li {
+  font-size: larger;
+}
+
+.bg-dark {
+  background-color: #121526 !important;
+}
+
+.navbar ul {
+  height: auto;
+}
+
+/* ************ */
+
+/* *****responsive tags */
+@media only screen and (max-width: 600px) {
+  .section-heading {
+    font-size: 2.5rem !important;
+    font-weight: 600;
+  }
+  .card-headings {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "poppins";
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 9% 15%;
+}
+
+/* Cover Page */
+
+.coverpage {
+  color: #fff;
+  background-image: url("images/cover-img.png");
+  text-align: left;
+  object-fit: cover;
+  height: 92vh;
+}
+
+.cover-image {
+  position: relative;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  width: 65%;
+  right: -40%;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-top: 50px;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* cover-page buttons */
+
+.row .btn {
+  transition: 0.5s;
+  margin: 5% 3% 5% 0;
+}
+
+.row .discover-button {
+  color: rgb(255, 255, 255);
+  transition-duration: 00.4s;
+}
+
+.row .discover-button:hover {
+  color: black;
+  box-shadow: 10px 10px 0px #ff96ad;
+  top: 5px;
+  left: -5px;
+}
+
+.row .btn:hover {
+  transform: scale(0.97);
+}
+
+@media only screen and (max-width: 600px) {
+  .big-heading {
+    font-family: "poppins";
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+/* ***************** */
+
+/* services section */
+
+.content-container {
+  padding: 4% 15%;
+  background-color: #ffffff;
+}
+.text-container {
+  padding: 20px;
+}
+
+.section-headings {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.services-img {
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 10px 10px 66px -8px rgba(0, 0, 0, 0.281);
+  -webkit-box-shadow: 10px 10px 66px -8px rgba(0, 0, 0, 0.308);
+  -moz-box-shadow: 10px 10px 66px -8px rgba(0, 0, 0, 0.219);
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 5px;
+}
+.services-img:hover {
+  transform: scale(0.98);
+  transform: rotate3d(50, -10, 40, 10deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .services-img {
+    width: 200px;
+    margin: 20px;
+  }
+}
+
+/* COVID-19 Section */
+
+.covid-19-container {
+  align-content: center;
+  text-align: center;
+  margin: 0;
+  background-color: #121526;
+  color: white;
+  padding: 4% 15%;
+}
+
+.covid-19-container hr {
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.covid-19-container .row {
+  margin: 0;
+}
+
+.covid-19-container h1 {
+  padding: 10px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(150, 150, 150, 1);
+}
+.covid-19-container h2 {
+  font-size: 2rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  color: #121526;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+video {
+  max-width: 100%;
+}
+
+.card {
+  margin: 10px;
+  border: none;
+  transition: 0.4s;
+  cursor: pointer;
+  min-height: 310px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  color: black;
+  font-weight: 600;
+}
+
+/* QUIZ REDIRECT SECTION */
+#quiz-redirect {
+  margin-top: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
+  background: rgb(18, 21, 38);
+  background: linear-gradient(
+    37deg,
+    rgba(18, 21, 38, 1) 0%,
+    rgba(72, 87, 170, 1) 100%
+  );
+  color: white;
+  border-radius: 20px;
+}
+
+.card-container {
+  box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+
+/* quiz page */
