@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -145,7 +146,16 @@ h3 {
   font-size: small;
 }
 
+.card:hover {
+  transform: scale(1);
+}
+
 @media (max-width: 500px) {
+  .opening h1 {
+    font-size: 2rem !important;
+    padding: 2%;
+  }
+
   .cards {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -160,12 +170,15 @@ h3 {
     bottom: 1rem;
     right: 0.5rem;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   .cards .card {
     min-height: 50vh;
     min-width: 90vw;
     margin: 1rem;
+  }
+  .innerCard h3 {
+    font-size: smaller;
   }
 }
 
