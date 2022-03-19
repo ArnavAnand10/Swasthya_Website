@@ -183,14 +183,14 @@ hr {
   transition-duration: 00.4s;
 }
 
-.row .discover-button:hover {
+.flex-container .discover-button:hover {
   color: black;
   box-shadow: 10px 10px 0px #ff96ad;
   top: 5px;
   left: -5px;
 }
 
-.row .btn:hover {
+.flex-container .btn:hover {
   transform: scale(0.97);
 }
 
