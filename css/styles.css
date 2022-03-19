@@ -18,7 +18,6 @@ h4,
 h5,
 h6 {
   font-family: "Poppins";
-  font-weight: 400;
 }
 
 p {
@@ -58,13 +57,55 @@ hr {
 /* ************ */
 
 /* *****responsive tags */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .section-heading {
+    font-size: 2rem !important;
+    font-weight: 500;
+  }
+  .card-headings h2 {
+    font-size: 1.5rem !important;
+  }
+  .coverpage .flex-container {
+    text-align: center;
+  }
+  .inner-text {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .big-heading {
+    font-family: "poppins";
     font-size: 2.5rem !important;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-heading {
+    font-size: 2rem;
     font-weight: 600;
   }
   .card-headings {
-    font-size: 1.6rem !important;
+    font-size: 1.6rem;
+  }
+  .big-heading {
+    font-family: "poppins";
+    font-size: 3rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .cover-image {
+    display: none;
+  }
+  #cover-img-col {
+    display: none;
+  }
+  .coverpage .flex-container {
+    text-align: center;
+  }
+  .container1 {
+    margin-right: 0 !important;
   }
 }
 
@@ -74,28 +115,36 @@ hr {
   font-family: "poppins";
   font-size: 4rem;
   line-height: 1.5;
+  font-weight: 200;
 }
 
 .section-heading {
   font-size: 3rem;
   line-height: 1.5;
   font-weight: 800;
+  margin-top: 20px;
 }
 
 /* Containers */
 
 .container-fluid {
-  padding: 9% 15%;
+  padding: 9% 10%;
 }
 
 /* Cover Page */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .coverpage {
   color: #fff;
   background-image: url("images/cover-img.png");
   text-align: left;
   object-fit: cover;
-  height: 92vh;
+  height: 100%;
 }
 
 .cover-image {
@@ -104,11 +153,11 @@ hr {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  width: 65%;
+  width: 80%;
   right: -40%;
   cursor: pointer;
   transition: 0.4s;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 @keyframes floating {
   0% {
@@ -124,12 +173,12 @@ hr {
 
 /* cover-page buttons */
 
-.row .btn {
+.flex-container .btn {
   transition: 0.5s;
   margin: 5% 3% 5% 0;
 }
 
-.row .discover-button {
+.flex-container .discover-button {
   color: rgb(255, 255, 255);
   transition-duration: 00.4s;
 }
@@ -145,29 +194,16 @@ hr {
   transform: scale(0.97);
 }
 
-@media only screen and (max-width: 600px) {
-  .big-heading {
-    font-family: "poppins";
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-}
-
 /* ***************** */
 
 /* services section */
 
 .content-container {
-  padding: 4% 15%;
+  padding: 2% 6% 2% 6%;
   background-color: #ffffff;
 }
 .text-container {
   padding: 20px;
-}
-
-.section-headings {
-  font-size: 3rem;
-  font-weight: 600;
 }
 
 .services-img {
@@ -200,7 +236,7 @@ hr {
   margin: 0;
   background-color: #121526;
   color: white;
-  padding: 4% 15%;
+  padding: 2% 6%;
 }
 
 .covid-19-container hr {
@@ -217,15 +253,19 @@ hr {
   text-transform: uppercase;
   text-shadow: 2px 2px 6px rgba(150, 150, 150, 1);
 }
-.covid-19-container h2 {
-  font-size: 2rem;
+.card-headings {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 20px;
   color: #121526;
-  font-weight: bolder;
-  text-transform: uppercase;
+
   margin-bottom: 15px;
+}
+
+.card-headings h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 video {
@@ -246,7 +286,6 @@ video {
 
 .card-title {
   color: black;
-  font-weight: 600;
 }
 
 /* QUIZ REDIRECT SECTION */
@@ -270,5 +309,3 @@ video {
   -moz-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
   border-radius: 20px;
 }
-
-/* quiz page */

@@ -62,14 +62,14 @@
   </nav>
 
 
-  <section id="coverpage">
+  <section id="coverpage container-fluid">
     <div style="background-image: url('images/cover-img.png');" class="container-fluid coverpage">
 
       <!-- Title -->
 
-      <div class="row">
+      <div class="flex-container">
 
-        <div class="col-lg-6">
+        <div class="container1" style="margin-right: 80px;">
           <h1 class="big-heading">Your <br> <span style="font-weight: bold;"> One Stop Solution </span> For <br> <span
               style="font-weight: bold;    "> Medical Services </span></h1>
 
@@ -80,7 +80,7 @@
                 class="fas fa-ambulance"></i> Emergency </button></a>
         </div>
 
-        <div class="col-lg-6">
+        <div class="container2" id="cover-img-col">
           <img class="cover-image" src="images/cover-image.png" alt="doctor-png">
 
         </div>
@@ -98,7 +98,8 @@
       <h1 class="section-heading">Your One Stop Solution for Essential Medical Services</h1>
       <hr>
       <div class="text-container">
-        <h5 style="text-align: left;">The recent epidemic has had a substantial influence on global healthcare systems.
+        <h5 style="text-align: left;" class="inner-text">The recent epidemic has had a substantial influence on global
+          healthcare systems.
           It is critical to provide basic health services to meet the growing demand for Covid-19 patient care.
           This website is Developed with the idea of providing <span style="font-weight: bold;"> essential medical
             services.</span>
@@ -113,7 +114,8 @@
 
         </div>
         <div class="col">
-          <img class="services-img" src="images\locateService.png" alt="">
+          <a href="https://www.google.com/maps/search/Nearest+Medical+Center/"> <img class="services-img"
+              src="images\locateService.png" alt=""> </a>
         </div>
         <div class="col">
           <img class="services-img" src="images\precautionayService.png" alt="">
@@ -131,17 +133,21 @@
   <!-- precautions/Prevention area -->
   <section id="covid-19">
     <div class="covid-19-container">
+
       <h1 class="section-heading">
         COVID-19 - All you need to know !
       </h1>
       <hr>
-      <h2 class="card-headings">Precautions/Preventions of Covid-19 in Twelve Steps</h2>
+      <div class="card-headings">
+        <h2>Precautions/Preventions of Covid-19 in Twelve Steps</h2>
+      </div>
+
       <div class="row">
 
 
         <!-- first row -->
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\6ft gif.mp4" muted autoplay loop></video>
@@ -151,7 +157,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\no-handshake.mp4" muted autoplay loop></video>
@@ -161,7 +167,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\mask wear.mp4" muted autoplay loop></video>
@@ -170,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\travel.mp4" muted autoplay loop></video>
@@ -182,7 +188,7 @@
 
         <!-- Second Row -->
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\hand wash.mp4" muted autoplay loop></video>
@@ -192,7 +198,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\avoid sick.mp4" muted autoplay loop></video>
@@ -202,7 +208,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\cover mouth.mp4" muted autoplay loop></video>
@@ -211,7 +217,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\Vaccination.mp4" muted autoplay loop></video>
@@ -226,7 +232,7 @@
         </div>
 
         <!-- Third Row -->
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\isolate.mp4" muted autoplay loop></video>
@@ -238,7 +244,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\dontTouch.mp4" muted autoplay loop></video>
@@ -247,7 +253,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\diet.mp4" muted autoplay loop></video>
@@ -259,7 +265,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6">
 
           <div class="card">
             <video src="res\videos\disinfect.mp4" muted autoplay loop></video>
@@ -313,7 +319,28 @@
 
 
 
+
+
   </section>
+
+  <div class="container bcontent">
+    <h2>Bootstrap Horizontal Card</h2>
+    <hr />
+    <div class="card" style="width: 500px;">
+      <div class="row no-gutters">
+        <div class="col-sm-5">
+          <img class="card-img" src="/images/defaultimg.png" alt="Suresh Dasari Card">
+        </div>
+        <div class="col-sm-7">
+          <div class="card-body">
+            <h5 class="card-title">Suresh Dasari</h5>
+            <p class="card-text">Suresh Dasari is a founder and technical lead developer in tutlane.</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
