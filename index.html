@@ -15,7 +15,8 @@
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <script src="https://kit.fontawesome.com/b3f99de958.js" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/57f2144bff.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -35,10 +36,10 @@
           <a class="nav-link active" aria-current="page" href="index.html#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="solarSystem.html">Our Solar System</a>
+          <a class="nav-link" href="solarSystem.html">Emergency Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#did-you-know">Interesting Facts</a>
+          <a class="nav-link" href="index.html#did-you-know">Covid-19 Self-Assessment</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -61,7 +62,7 @@
     </div>
   </nav>
 
-
+  <!-- cover-page -->
   <section id="coverpage container-fluid">
     <div style="background-image: url('images/cover-img.png');" class="container-fluid coverpage">
 
@@ -92,7 +93,7 @@
 
   </section>
 
-
+  <!-- Website function -->
   <section id="services">
     <div class="content-container container-fluid">
 
@@ -119,7 +120,7 @@
               src="images\locateService.png" alt=""> </a>
         </div>
         <div class="col">
-          <img class="services-img" src="images\precautionayService.png" alt="">
+          <a href="#covid-19"> <img class="services-img" src="images\precautionayService.png" alt=""> </a>
         </div>
         <div class="col">
           <a href="vaccination.html"><img class="services-img" src="images\vaccination.png" alt=""></a>
@@ -139,6 +140,20 @@
         COVID-19 - All you need to know !
       </h1>
       <hr>
+      <h2>How Covid-19 Spreads?</h2>
+      <h5 style="color: white; padding: 20px; text-align: left; line-height: 1.3;">COVID-19 <b> transmits when people
+          breathe in air
+          contaminated by droplets and
+          small airborne
+          particles containing
+          the virus.</b> The <b> risk</b> of breathing these in <b> is highest when people are in close proximity,</b>
+        but they can be inhaled over longer distances, particularly indoors. Transmission can also occur if splashed or
+        sprayed with contaminated fluids in the eyes, nose or mouth, and, rarely, via contaminated surfaces.
+        <b> These are some of the precautionary / Prevention measures which one must take to stop or minimize the spread
+          of
+          COVID-19</b>
+      </h5>
+
       <div class="card-headings">
         <h2>Precautions/Preventions of Covid-19 in Twelve Steps</h2>
       </div>
@@ -239,7 +254,7 @@
             <video src="res\videos\isolate.mp4" muted autoplay loop></video>
             <div class="card-body">
               <h5 class="card-title">Isolate Yourself if You Are Having Covid-19 Symptoms</h5>
-              <a href="https://www.google.com">
+              <a href="index.html#covid-symptoms">
                 <p>Know Symptoms of Covid-19</p>
               </a>
             </div>
@@ -260,7 +275,7 @@
             <video src="res\videos\diet.mp4" muted autoplay loop></video>
             <div class="card-body">
               <h5 class="card-title">Have a Healthy Diet To Build Your Immunity</h5>
-              <a href="https://www.google.com">
+              <a href="index.html#immunity-section">
                 <p>How to boost immunity ?</p>
               </a>
             </div>
@@ -286,29 +301,98 @@
 
   </section>
 
+  <!-- Symptoms of Covid-19   -->
+  <section id="covid-symptoms">
+    <div class="covid-19-container" style="background-color: white; ">
+
+      <div class="card-headings">
+        <h2 style="text-transform: uppercase; font-weight: 700 ;">Common Symptoms of Covid-19</h2>
+        <hr style="background-color: black; opacity: 0.8;">
+      </div>
+
+      <div class="symptoms-row" style="overflow-x:scroll;
+      overflow-y: hidden;
+      margin: 0 auto;
+      white-space: nowrap ;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;">
+
+
+        <!-- first row -->
+
+
+
+        <div class="neomorph">
+          <img src="images\Coughing.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Coughing</h5>
+          </div>
+        </div>
+
+
+
+
+        <div class="neomorph">
+          <img src="images\Fever.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">High Fever</h5>
+          </div>
+        </div>
+
+
+
+
+        <div class="neomorph">
+          <img src="images\Headache.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Body Ache or Fatigue</h5>
+          </div>
+        </div>
+
+
+
+
+        <div class="neomorph">
+          <img src="images\Soar throat.png" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Sore Throat</h5>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
   <!-- feeling sick card -->
   <section id="quiz-redirect">
     <div class="card-container">
       <div class="row" style="padding: 2% 5%;border-radius: 20px;">
-        <div class="col">
-          <img src="images\sick.png" style="max-width: 350px; height: auto;" alt="">
+        <div class="col" style="padding:40px 40px 0px 40px;">
+          <img src="images\sick-card.png" id="sick-card-img">
         </div>
-        <div class="col" style="text-align: left;">
-          <h1 style="margin-bottom: 30px; margin-top: 40px; font-size: 3rem; font-weight: 600;">Are you feeling Sick?
+        <div class="col" style="text-align: left; padding:0px 40px 0px 40px;;">
+          <h1 class="sick-card-title">Are you feeling Sick?
           </h1>
-          <h4 style="line-height: 1.2; margin-bottom: 15px;">If you are having the symptoms of COVID-19 like cough,
+          <h4 class="sick-card-body">If you are having the symptoms of COVID-19 like cough,
             fever, etc. You can <span style="font-weight: bolder;">Call
               Helpline Number</span> or <span style="font-weight: bolder;">Locate
               Covid-19 Test</span> </h4>
           <a href="quiz.html">
-            <p style="color: white;">Or<br> You Can Take A Self Assesment Test Here</p>
+            <p style="color: white;">You Can Take A <b> Self Assesment Test Here </b>as well.</p>
           </a>
-          <a href="tel:112"><button type="button" style="margin: 5px;" class="btn btn-lg btn-danger emrgency-button">
+          <a href="tel:+91-11-23978046"><button type="button" style="margin: 5px;"
+              class="btn btn-lg btn-danger emrgency-button sick-btn">
               <i class="fas fa-ambulance"></i> Emergency </button>
           </a>
           <a href="https://www.google.com/maps/search/covid+test/"><button type="button" style="margin: 5px;"
-              class="btn btn-lg btn-danger emrgency-button">
-              <i class="fas fa-ambulance"></i> Locate Test </button>
+              class="btn btn-lg btn-warning emrgency-button sick-btn">
+              <i class="fa-solid fa-file-lines"></i> Locate Test </button>
           </a>
 
 
@@ -324,6 +408,162 @@
 
   </section>
 
+  <!-- Immunity Section -->
+  <section class="container-fluid" id="immunity-section">
+    <h1 class="section-heading"> How to Build Immunity?</h1>
+    <hr style="background-color: white;">
+
+    <div class="text-container-immun">
+      <h5 style="color: white; text-align: left; margin-bottom: 50px;">
+        Growing concerns about COVID-19 has caused a surge in online searches on how to properly protect yourself
+        against the virus. In addition to proper handwashing, what else can you do to improve your health? One area that
+        is squarely in your control is your immune system. With so much information online, we’ve pulled out some top
+        tips to boost your immune system and help your body fight against infection.
+      </h5>
+
+      <h2 class="immun-headings">Improve Your Diet:</h2>
+      <h5 style="color: white; text-align: left;"> The food you eat
+        plays a key
+        aspect in determining your overall health and immunity.
+        Eat low carb diets, as this will help control high blood sugar and pressure. A low carb diet will help slow down
+        diabetes and focus on a protein-rich diet to keep you in good shape. And regularly consume vegetables and fruits
+        rich in Beta carotene, Ascorbic acid & other essential vitamins. Certain foods like mushrooms, tomato, bell
+        pepper
+        and green vegetables like broccoli, spinach are also good options to build resilience in the body against
+        infections.
+        <br> <br>
+
+        You can also eat supplements rich in omega 3 & 6 fatty acids for your daily dose, if stepping out to buy
+        groceries
+        is not an option during social distancing. Some natural immunity supplements include ginger, gooseberries (amla)
+        and turmeric. Some of these superfoods are common ingredients in Indian dishes and snacks. There are several
+        herbs
+        that help in boosting immunity like garlic, Basel leaves and Black cumin. Certain seeds and nuts like sunflower
+        seeds, Flax seed, pumpkin seeds and melon seeds are excellent sources of protein and vitamin E.
+        <br> <br>
+
+
+        Probiotics like Yoghurt, Yakult and fermented food are also excellent sources to rejuvenate the composition of
+        gut bacteria, which is important for nutrient absorption by the body. These are good options for the older
+        generation
+        too. <br>
+      </h5>
+    </div>
+
+    <div class="text-container-immun">
+
+      <h2 class="immun-headings"> Don’t Compromise on Sleep:</h2>
+      <h5 style="color: white; text-align: left;"> Good snooze time for 7-8 hours is the best way to help your body
+        build immunity; lesser sleep will leave you tired and impair your brain activity. The lack of sleep will prevent
+        the body from resting and this will impair other bodily functions that will have a direct impact on your
+        immunity. Lack of sleep adversely affects the action of the flu vaccine.
+
+      </h5>
+      <br><br>
+      <h2 class="immun-headings">
+        <h2 class="immun-headings"> Stay Hydrated:</h2>
+      </h2>
+      <h5 style="color: white; text-align: left;"> Drink up to 8-10 glasses of water every day, to stay hydrated.
+        Hydration will help flush out the toxins from the body and lower the chances of flu. Other alternatives include
+        juices made of citrus fruits and coconut water, to beat the heat.</h5><br><br>
+      <h2 class="immun-headings">Don’t Skip on Exercise:</h2>
+      <h5 style="color: white; text-align: left;"> A good diet should be followed by an exercise routine. Remember to
+        exercise regularly; even light exercise will go a long way in releasing the toxins from your body. It is
+        recommended to exercise for 30 to 45 minutes, depending on your stamina. If you have not started exercising yet,
+        then it is a good time to start. There are several Youtube channels and apps to help you exercise at home.
+        Regular exercise improves metabolism, which has a direct correlation with body immunity.</h5> <br><br>
+      <h2 class="immun-headings"> Destress Yourself:</h2>
+      <h5 style="color: white; text-align: left;">These are testing times, and a prolonged period of staying indoors has
+        its implications on your mental wellbeing. The growing anxiety around the pandemic is another concern that is
+        affecting millions across the globe. While the uncertainty might be overwhelming, there are few steps we can
+        follow regularly to help relieve our stress, stress is known to have an adverse effect on immunity.
+
+      </h5>
+      <h4 style="text-align: left; margin-top: 20px; color: rgb(255, 255, 255);">1. Practice Meditation:
+      </h4>
+      <h6 style="color: white; text-align: left;">Too much stress releases the hormone known as cortisol, which impairs
+        your response to immediate surroundings and makes your body susceptible to infections; you are left feeling
+        constantly anxious. The best way to relieve stress is through meditation, it is a tried and tested activity to
+        calm the nerves. If you need help meditating, then there are several channels on youtube that have instructional
+        resources to help you meditate.</h6>
+      <h4 style="text-align: left; margin-top: 20px; color: rgb(255, 255, 255);">2. Avoid smoking, alcohol and other
+        addictive substances:
+
+      </h4>
+      <h6 style="color: white; text-align: left;"> Certain habits like smoking, vaping, alcohol consumption and
+        substance abuse have a direct correlation between weakened body defences and respiratory illnesses. Engaging in
+        smoking and vaping is proven to weaken your lung capacity and destroy the cells lining your respiratory tracts,
+        these cells are crucial to fight viruses that enter through your nasal orifices. There is new research claiming
+        that individuals who engage in heavy alcohol consumption tend to suffer from ARDS (Acute Respiratory distress
+        syndrome) which is one of the conditions caused by Covid 19 infection. Practice moderation, if you are dependent
+        on any of these, as sudden withdrawal can also prove to be risky.</h6>
+
+      <h4 style="text-align: left; margin-top: 20px; color: rgb(255, 255, 255);">3. Travelling:
+      </h4>
+
+      <h6 style="color: white; text-align: left;"> Avoid all kinds of non-essential travels. Most Covid 19 positive
+        cases are imported cases, which later spread to the communities. Avoid being exposed to the public transport
+        system and public places to avoid any likelihood of exposure. In case you have to travel, make sure to cover
+        your nose and mouth with a mask and carry an alcohol-based hand sanitizer, at all times. Remember to sanitize
+        each time you touch a surface, as Covid 19 strain can stay on surfaces for a few hours to days. Use your
+        non-dominant hand while accessing the doorknobs and handles, as these are frequently touched by many people.
+      </h6>
+      <br><br>
+
+      <h2 class="immun-headings">Supplements and immunity boosting foods:</h2>
+      <h5 style="color: white; text-align: left;"> While all the above-mentioned tips will definitely help, the need of
+        the hour is a quick boost to your immunity system to keep it fighting fit. If you’re concerned whether you are
+        getting the right amount of nutrients from your diet, consult with your doctor about a supplementation regimen
+        to boost your immune system. Here are a few common supplements and superfoods that can help. </h5>
+
+      <h4 style=" text-align: left; margin-top: 20px; color: rgb(255, 255, 255);"> Vitamin C:</h4>
+      <h6 style="color: white; text-align: left;"> This particular vitamin is a crucial participant in the army of
+        immunity. It helps prevent the common cold. It acts as a powerful antioxidant and protects against damage
+        induced by oxidative stress. For severe infections, including sepsis and acute respiratory distress syndrome
+        (ARDS), high dose intravenous vitamin C treatment has been shown to significantly improve symptoms in
+        patients.
+      </h6>
+
+      <h4 style="text-align: left; margin-top: 20px; color: rgb(255, 255, 255);"> Vitamin D:
+      </h4>
+      <h6 style="color: white; text-align: left;"> Vitamin D supplements have a mild protective effect against
+        respiratory tract infections. Most people are deficient in Vitamin-D, so it’s best to consult with a doctor
+        about taking a Vitamin D supplement to boost immune response.</h6>
+
+      <h4 style="text-align: left; margin-top: 20px; color: rgb(255, 255, 255);"> Zinc
+      </h4>
+      <h6 style="color: white; text-align: left;">Elderberries are full of nutrients including minerals like
+        phosphorus,
+        potassium, iron, copper and vitamins, such as vitamin A, B, and C, proteins and dietary fibre. Elderberries
+        have
+        antibacterial and antiviral qualities which help fight cold and influenza.</h6>
+
+      <h4 style="text-align: left; margin-top: 20px; color: rgb(255, 255, 255);">Turmeric and Garlic:
+      </h4>
+      <h6 style="color: white; text-align: left;"> The bright yellow spice, Turmeric, contains a compound called
+        curcumin, which boosts the immune function. Garlic has powerful anti-inflammatory and antiviral properties
+        which
+        enhances body immunity.
+
+        Apart from maintaining a healthy lifestyle and taking supplements, the Indian health ministry is also
+        suggesting
+        few organic and natural ways to practise as preventive measures to fight COVID-19. The Ministry of AYUSH has
+        recommended the following self-care guidelines as preventive measures and to boost immunity with special
+        reference to respiratory health.</h6>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </section>
 
 
 

@@ -3,9 +3,19 @@
   font-family: hindi;
   src: url("D:\\HPE Competition\\Medical Website\\AMS Aakul 5.ttf");
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cc799b;
+}
+
 body {
   font-family: "Poppins";
   text-align: center;
+  overflow-x: hidden;
 }
 
 a {
@@ -72,6 +82,23 @@ hr {
     text-align: center;
   }
   .inner-text {
+    font-size: 1rem !important;
+  }
+  #sick-card-img {
+    max-width: 150px !important;
+  }
+  .sick-card-title {
+    font-size: 2rem !important;
+  }
+  .sick-card-body {
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 1rem !important;
+  }
+  #quiz-redirect {
+    margin: 20px !important;
+  }
+  .sick-btn {
     font-size: 1rem !important;
   }
 }
@@ -291,6 +318,27 @@ video {
   color: black;
 }
 
+/* symptoms row */
+
+.neomorph {
+  margin: 40px 60px 40px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+
+  border-radius: 20px;
+  background: white;
+  box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
+}
+
+.neomorph img {
+  max-width: 300px;
+}
+
 /* QUIZ REDIRECT SECTION */
 #quiz-redirect {
   margin-top: 50px;
@@ -311,4 +359,42 @@ video {
   -webkit-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 36px -4px rgba(0, 0, 0, 0.75);
   border-radius: 20px;
+}
+
+#sick-card-img {
+  max-width: 250px;
+}
+.sick-card-title {
+  margin-bottom: 30px;
+  margin-top: 40px;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.sick-card-body {
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+/* Immunity Section */
+#immunity-section {
+  background: rgb(18, 21, 38);
+  background: linear-gradient(
+    37deg,
+    rgba(18, 21, 38, 1) 0%,
+    rgba(72, 87, 170, 1) 100%
+  );
+  margin-top: 40px;
+  color: white;
+}
+
+.text-container-immun {
+  margin-bottom: 50px;
+}
+
+.immun-headings {
+  text-align: left;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
 }
