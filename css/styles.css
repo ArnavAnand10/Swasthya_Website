@@ -4,6 +4,8 @@
   src: url("D:\\HPE Competition\\Medical Website\\AMS Aakul 5.ttf");
 }
 
+/* scrollbar */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -44,6 +46,16 @@ hr {
   height: 2px !important;
   background-color: #000000a2;
   opacity: 0.8;
+}
+
+/* prelaoder */
+#loading {
+  background: rgb(253, 253, 253);
+  background-image: url("food-image.jpg");
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 101;
 }
 
 /* Navbar */
