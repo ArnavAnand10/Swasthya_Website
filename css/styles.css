@@ -48,16 +48,6 @@ hr {
   opacity: 0.8;
 }
 
-/* prelaoder */
-#loading {
-  background: rgb(253, 253, 253);
-  background-image: url("food-image.jpg");
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 101;
-}
-
 /* Navbar */
 .navbar {
   padding: 20px;
@@ -116,7 +106,8 @@ hr {
   .inner-text {
     font-size: 1rem !important;
   }
-  #sick-card-img {
+  .card-img {
+    min-width: 100px !important;
     max-width: 150px !important;
   }
   .sick-card-title {
@@ -445,7 +436,7 @@ video {
   border-radius: 20px;
 }
 
-#sick-card-img {
+.card-img {
   max-width: 250px;
 }
 .sick-card-title {
@@ -653,4 +644,21 @@ video {
   .popup-box .popup-content {
     width: calc(100% - 30px);
   }
+}
+
+/* vaccination section */
+.vaccine-headings {
+  text-align: left;
+  margin: 20px;
+  line-height: 1.3;
+}
+
+/* End-Section */
+
+#services-function {
+  text-align: left;
+}
+
+#services-function .container :hover {
+  transform: scale(1);
 }
