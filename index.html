@@ -15,13 +15,17 @@
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
   <script src="https://kit.fontawesome.com/57f2144bff.js" crossorigin="anonymous"></script>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 
 </head>
 
 <body>
+
 
 
   <!-- Navbar -->
@@ -37,7 +41,7 @@
           <a class="nav-link active" aria-current="page" href="index.html#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="solarSystem.html">Emergency Services</a>
+          <a class="nav-link" href="#services-function">Emergency Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="quiz.html">Covid-19 Self-Assessment</a>
@@ -48,13 +52,13 @@
             More
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="index.html#spaceScience "></a></li>
-            <li><a class="dropdown-item" href="index.html#space ">Space</a></li>
-            <li><a class="dropdown-item" href="index.html#stars-plantes-asteriods-comets">Stars, planets, asteroids and
-                comets </a></li>
-            <li><a class="dropdown-item" href="index.html#galaxies-quasars">Galaxies and Quasars</a></li>
-            <li><a class="dropdown-item" href="index.html#black-holes">Black Holes</a></li>
-            <li><a class="dropdown-item" href="index.html#origin-of-universe">The Big Bang</a></li>
+            <li><a class="dropdown-item" href="index.html#covid-symptoms">Covid-19 Symptoms</a></li>
+            <li><a class="dropdown-item" href="index.html#covid-19">Precautionary Measures for Covid-19</a></li>
+
+            <li><a class="dropdown-item" href="vaccination.html">
+                Nearest Vaccination Center </a></li>
+            <li><a class="dropdown-item" href="index.html#immunity-section">How to Build Immunity ?</a></li>
+            <li><a class="dropdown-item" href="index.html#immediate-steps">Immediate Steps for Covid-19 +ve</a></li>
 
           </ul>
         </li>
@@ -62,6 +66,11 @@
     </div>
     </div>
   </nav>
+
+
+  <!-- Back to top button -->
+  <a id="button"></a>
+
 
   <!-- cover-page -->
   <section id="coverpage container-fluid">
@@ -71,7 +80,7 @@
 
       <div class="flex-container">
 
-        <div class="container1" style="margin-right: 80px;">
+        <div class="container1  animated animatedFadeInUp fadeInUp" style="margin-right: 80px;">
           <h1 class="big-heading">SWASTHYA</h1>
           <h2>Your <span style="font-weight: bold;"> One Stop Solution </span> For <span style="font-weight: bold;    ">
               Medical Services </span></h3>
@@ -112,13 +121,14 @@
       <!-- services cards -->
       <div class="row">
         <div class="col">
+          <a href="#services-function"> <img class="services-img" src="images\emergencyCard.png" alt=""></a>
 
-          <img class="services-img" src="images\emergencyCard.png" alt="">
+
+
 
         </div>
         <div class="col">
-          <a href="https://www.google.com/maps/search/Nearest+Medical+Center/"> <img class="services-img"
-              src="images\locateService.png" alt=""> </a>
+          <a href="#services-function"> <img class="services-img" src="images\locateService.png" alt=""> </a>
         </div>
         <div class="col">
           <a href="#covid-19"> <img class="services-img" src="images\precautionayService.png" alt=""> </a>
@@ -396,7 +406,7 @@
           </a>
           <a href="https://www.google.com/maps/search/covid+test/"><button type="button" style="margin: 5px;"
               class="btn btn-lg btn-warning emrgency-button sick-btn">
-              <i class="fa-solid fa-file-lines"></i> Locate Test </button>
+              <i class="fa-solid fa-file-lines"></i> Locate Covid -19 Test </button>
           </a>
 
 
@@ -860,47 +870,140 @@
   </section>
 
   <!-- end section -->
-  <section id="services-function">
-    <div class="container py-3">
-      <div class="card">
-        <div class="row ">
-          <div class="col-md-4">
-            <img src="images\emergencyCard.png" class="w-0">
-          </div>
-          <div class="col-md-8 px-3">
-            <div class="card-block px-3">
-              <h4 class="card-title">Emergency Support for Covid-19
-              </h4> <br>
-              <p class="card-text" style="color: black;"><b> Government of INDIA </b> has laucnhed 24x7 <b> Central
-                  Helpline
-                  Numbers</b> for
-                Corona-Virus or you can <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf">find
-                  specific helpline numbers for your State.</a> You can also <b> Call Ambulance </b>in case of Emergency
-                by clicking on one of the buttons </p>
-              <br>
-              <a href="tel:102"><button type="button" class="btn btn-lg btn-danger emrgency-button"><i
-                    class="fas fa-ambulance"></i> Emergency </button></a>
-              <a href="tel:+91-11-23978046"><button type="button" class="btn btn-lg btn-primary emrgency-button"><i
-                    class="fas fa-ambulance"></i> Helpline </button></a>
-            </div>
-          </div>
+  <section id="services-function" style="margin-top: 100px;">
 
+    <!-- container start -->
+    <div style="background: linear-gradient( 37deg, rgba(18, 21, 38, 1) 0%, rgba(72, 87, 170, 1) 100% ); padding: 40px 0px 40px 0px ;
+    color: white;">
+
+
+      <div class="container py-3">
+        <div class="card" style="background-color: inherit; ">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images\emergencyCard.png" class="w-0" style="margin-bottom: 20px;">
+            </div>
+            <div class="col-md-8 px-3">
+              <div class="card-block px-3" style="margin-top: 20px;">
+                <h4 class="card-title" style="color: white;">Emergency Support for Covid-19
+                </h4> <br>
+                <p class="card-text" style="color: rgb(255, 255, 255);"><b> Government of INDIA </b> has laucnhed 24x7
+                  <b> Central
+                    Helpline
+                    Numbers</b> for
+                  Corona-Virus or you can <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf"
+                    style="color: white; text-decoration: underline;">find
+                    specific helpline numbers for your State.</a> You can also <b> Call Ambulance </b>in case of
+                  Emergency
+                  by clicking on one of the buttons.
+                </p>
+                <br>
+                <a href="tel:102"><button type="button" class="btn btn-lg btn-danger emrgency-button"
+                    style="margin: 10px;"><i class="fas fa-ambulance"></i> Emergency
+                  </button></a>
+                <a href="tel:+91-11-23978046"><button type="button" class="btn btn-lg btn-primary emrgency-button"
+                    style="margin: 10px;"><i class="fa-solid fa-phone" style="margin-right: 5px;"></i> Covid-19
+                    Helpline </button></a>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div style="background-color: #ffffff; padding: 40px 0px 40px 0px ;">
+
+
+      <div class="container py-3">
+        <div class="card" style="background-color: inherit;">
+          <div class="row ">
+
+            <div class="col-md-8 px-3">
+              <div class="card-block px-3" style="margin-top: 20px;">
+                <h4 class="card-title">Covid-19 Self-Assessment Test
+                </h4> <br>
+                <p class="card-text" style="color: black;">The <b> self-assessment </b> is just for <b>informational
+                    purposes a cannot be used to diagnose you. </b> Anyone who is unwell or has any disease symptoms,
+                  even those
+                  not specified in this screening tool, should stay at home and seek medical attention if necessary. If
+                  you
+                  have medical concerns, seek advice from a physician. </p>
+                <br>
+                <a href="quiz.html" style="margin: 10px;"><button type="button"
+                    class="btn btn-lg btn-success btn-primary"><i class="fas fa-ambulance"></i> Take
+                    Self-Assessment
+                  </button></a>
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="images\self assess.jpg" class="w-0" style="margin-bottom: 20px;">
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
+    <!-- container end -->
+
+    <!-- container start -->
+    <div style="background: linear-gradient( 37deg, rgba(18, 21, 38, 1) 0%, rgba(72, 87, 170, 1) 100% );padding: 40px 0px 40px 0px ;
+     color: white;">
+
+
+      <div class="container py-3">
+        <div class="card" style="background-color: inherit; ">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images\locate-end.jpg" class="w-0" style="margin-bottom: 20px; border-radius: 15px;">
+            </div>
+            <div class="col-md-8 px-3">
+              <div class="card-block px-3" style="margin-top: 20px;">
+                <h4 class="card-title" style="color: white;">Locate Nearest Medical Center or Rapid Test Center
+                </h4> <br>
+                <p class="card-text" style="color: rgb(255, 255, 255);"> You can find Nearest Medical Center and You can
+                  also find nearest COVID-19 Test Center in case if you are having the <a href="#covid-symptoms" ,
+                    style="text-decoration: underline; color: #ffffff;">
+                    symptoms
+                    of
+                    COVID-19.</a>
+                </p>
+                <br>
+                <a href="https://www.google.com/maps/search/Nearest+Medical+Center/" style="margin: 10px;"><button
+                    type="button" class="btn btn-lg btn-success primary-button" style="margin: 10px;"><i
+                      class="fas fa-ambulance"></i> Nearest
+                    Medical
+                    Center
+                  </button></a>
+                <a href="https://www.google.com/maps/search/covid+test/" style="margin: 10px;"><button type="button"
+                    class="btn btn-lg btn-primary emrgency-button" style="margin: 10px;"><i class="fa-solid fa-phone"
+                      style="margin-right: 5px;"></i> Covid Test Center </button></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container end -->
+
+
+
+
+
   </section>
 
 
   <!-- Footer -->
 
-  <footer class="white-section" id="footer">
+  <footer class="white-section" id="footer"
+    style="margin: 80px 0px 10px 0px; border-top: 1px solid black; padding-top: 10px; ">
     <div class="container">
-      <i class="social-icon fab fa-facebook-f"></i>
-      <i class="social-icon fab fa-twitter"></i>
-      <i class="social-icon fab fa-instagram"></i>
-      <i class="social-icon fas fa-envelope"></i>
-      <p>Designed and Developed By Arnav & Ridham</p>
+
+      <p style="color: black;">2022 | Designed and Developed By <b> Arnav & Ridham (Code Bros)</b></p>
     </div>
   </footer>
 
@@ -940,6 +1043,51 @@
   function popupBox() {
     popup.classList.toggle("open");
   }
+
+  const backToTopButton = document.querySelector("#back-to-top-btn");
+
+  window.addEventListener("scroll", scrollFunction);
+
+  function scrollFunction() {
+    if (window.pageYOffset > 300) { // Show backToTopButton
+      if (!backToTopButton.classList.contains("btnEntrance")) {
+        backToTopButton.classList.remove("btnExit");
+        backToTopButton.classList.add("btnEntrance");
+        backToTopButton.style.display = "block";
+      }
+    }
+    else { // Hide backToTopButton
+      if (backToTopButton.classList.contains("btnEntrance")) {
+        backToTopButton.classList.remove("btnEntrance");
+        backToTopButton.classList.add("btnExit");
+        setTimeout(function () {
+          backToTopButton.style.display = "none";
+        }, 250);
+      }
+    }
+  }
+
+
+  // Back to Top Btn
+  var btn = $('#button');
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
+
+
+
+
+
 </script>
 
 
